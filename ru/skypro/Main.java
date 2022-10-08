@@ -31,5 +31,16 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составила " + minDailySpend + " рублей. Максимальная сумма трат за день составила " + maxDailySpend + " рублей.");
+
+        System.out.println("\n" +"Tusk 3" + "\n");
+
+        float total1 = 0;
+        for (int j : dailySpending) {
+            total1 = total1 + (float) j;
+        }
+        float averageSpending = total1 / 30;
+        System.out.println("Средняя сумма трат за месяц составила " + averageSpending + " рублей.");
+
+
     }
 }
