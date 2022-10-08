@@ -41,6 +41,12 @@ public class Main {
         float averageSpending = total1 / 30;
         System.out.println("Средняя сумма трат за месяц составила " + averageSpending + " рублей.");
 
+        System.out.println("\n" +"Tusk 4" + "\n");
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--){
+            System.out.print(reverseFullName[i]);
+        }
 
     }
 }
