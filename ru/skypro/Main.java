@@ -11,6 +11,25 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println("\n" + "Tusk 1" + "\n");
+        int[] dailySpending = generateRandomArray();
+        int totalSpending = 0;
+        for (int j : dailySpending) {
+            totalSpending = totalSpending + j;
+        }
+        System.out.println("Сумма трат за месяц составила " + totalSpending + " рублей.");
 
+        System.out.println("\n" +"Tusk 2" + "\n");
+        int minDailySpend = 300000;
+        int maxDailySpend = 0;
+        for (int j : dailySpending) {
+            if (minDailySpend > j) {
+                minDailySpend = j;
+            }
+            if (maxDailySpend < j) {
+                maxDailySpend = j;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minDailySpend + " рублей. Максимальная сумма трат за день составила " + maxDailySpend + " рублей.");
     }
 }
