@@ -11,6 +11,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        System.out.println("\n" + "Tusk 1" + "\n");
+        int[] dailySpending = generateRandomArray();
+        int totalSpending = 0;
+        for (int j : dailySpending) {
+            totalSpending = totalSpending + j;
+        }
+        System.out.println("Сумма трат за месяц составила " + totalSpending + " рублей.");
 
     }
 }
